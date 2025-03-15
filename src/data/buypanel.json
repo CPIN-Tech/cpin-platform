@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "facility": "Vienna GES",
+    "location": "9%",
+    "capacity": 150,
+    "sold": 123,
+    "supply": 130
+  },
+  {
+    "id": 2,
+    "facility": "Germany GES",
+    "location": "7%",
+    "capacity": 250,
+    "sold": 50,
+    "supply": 500
+  },
+  {
+    "id": 3,
+    "facility": "Aydın GES",
+    "location": "8%",
+    "capacity": 100,
+    "sold": 100,
+    "supply": 100
+  }
+]
