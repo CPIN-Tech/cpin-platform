@@ -196,6 +196,44 @@
     "inputs": [
       {
         "indexed": false,
+        "internalType": "uint256",
+        "name": "sppId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "didAccountPubKey",
+        "type": "uint256"
+      }
+    ],
+    "name": "DidRegistered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sppId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "didAccountPubKey",
+        "type": "uint256"
+      }
+    ],
+    "name": "DidUnregistered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
         "internalType": "uint64",
         "name": "version",
         "type": "uint64"
@@ -222,6 +260,12 @@
       {
         "indexed": false,
         "internalType": "uint128",
+        "name": "productionW",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
         "name": "cdataAmount",
         "type": "uint128"
       },
@@ -230,12 +274,6 @@
         "internalType": "uint128",
         "name": "cwattAmount",
         "type": "uint128"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "productionIpfsCid",
-        "type": "string"
       }
     ],
     "name": "ProductionInfoAdded",
@@ -559,6 +597,11 @@
       },
       {
         "internalType": "uint128",
+        "name": "productionW",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
         "name": "cdataAmount",
         "type": "uint128"
       },
@@ -566,11 +609,6 @@
         "internalType": "uint128",
         "name": "cwattAmount",
         "type": "uint128"
-      },
-      {
-        "internalType": "string",
-        "name": "productionIpfsCid",
-        "type": "string"
       }
     ],
     "name": "addSppProductionInfo",
@@ -653,6 +691,49 @@
         "internalType": "bytes32",
         "name": "",
         "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sppId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSppDidByIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sppId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSppDidCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -791,6 +872,24 @@
         "type": "bytes4"
       }
     ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sppId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "didAccountPubKey",
+        "type": "uint256"
+      }
+    ],
+    "name": "registerDid",
+    "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -1016,6 +1115,24 @@
       }
     ],
     "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sppId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "didAccountPubKey",
+        "type": "uint256"
+      }
+    ],
+    "name": "unregisterDid",
+    "outputs": [],
+    "stateMutability": "nonpayable",
     "type": "function"
   },
   {

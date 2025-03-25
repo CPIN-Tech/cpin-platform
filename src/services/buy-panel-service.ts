@@ -12,21 +12,24 @@ import {
   cpinTokenAddress,
   usdcTokenAddress,
   usdtTokenAddress,
+  peaqTokenAddress,
 } from './contract-addresses';
 import { handleTransaction, handleTxExcepton } from '@/utils/transaction-helpers';
 import * as DialogService from '@/services/dialogService';
 
-type CurrencyType = 'USDT' | 'USDC' | 'CPIN';
+type CurrencyType = 'USDT' | 'USDC' | 'CPIN' | 'PEAQ';
 
 const price = ref(0n);
 export const selectedCapacity = ref(1);
-export const selectedCurrency = ref<CurrencyType>('USDT');
+export const selectedCurrency = ref<CurrencyType>('PEAQ');
 export const isApproveNeeded = ref(false);
 
 const currencyAddress = computed(() => {
   switch (selectedCurrency.value) {
     case 'CPIN':
       return cpinTokenAddress.value;
+    case 'PEAQ':
+      return peaqTokenAddress.value;
     case 'USDT':
       return usdtTokenAddress.value;
     case 'USDC':
@@ -54,7 +57,13 @@ watchEffect(async (onCleanup) => {
   onCleanup(() => (active = false));
 
   if (currencyAddress.value && cpinBuyPanelAddress.value) {
-    const result = await fetchPrice(currencyAddress.value, cpinBuyPanelAddress.value);
+    let result = await fetchPrice(currencyAddress.value, cpinBuyPanelAddress.value);
+    if (currencyAddress.value == peaqTokenAddress.value) {
+      result = result * 100n;
+    }
+    if (currencyAddress.value == usdtTokenAddress.value || currencyAddress.value == usdcTokenAddress.value) {
+      result = result * 10n**12n;
+    }
     if (active) {
       price.value = result;
     }

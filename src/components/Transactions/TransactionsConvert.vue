@@ -71,7 +71,7 @@
         <button class="select-button" @click="connectWallet">Connect Wallet</button>
       </div>
       <div v-else-if="!isSupportedChain" class="w-full">
-        <button class="select-button" @click="switchNetwork">Switch to Polygon</button>
+        <button class="select-button" @click="switchNetwork">Switch to Peaq</button>
       </div>
       <div v-else-if="isApproveNeeded" class="w-full">
         <button class="select-button" @click="onApproveClick">Approve {{ currentToken }}</button>

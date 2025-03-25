@@ -43,7 +43,7 @@
         <button class="select-button" @click="connectWallet">Connect Wallet</button>
       </div>
       <div v-else-if="isSupportedChain == false" class="w-full">
-        <button class="select-button" @click="switchNetwork">Switch to Polygon</button>
+        <button class="select-button" @click="switchNetwork">Switch to Peaq</button>
       </div>
       <div class="w-full" v-else-if="isApproveNeeded">
         <button class="select-button" @click="onApproveClick">
@@ -77,9 +77,9 @@ const props = defineProps({
 const show = defineModel();
 
 const currencies = [
+  { name: 'PEAQ', amount: 35 },
   { name: 'USDT', amount: 5 },
   { name: 'USDC', amount: 5 },
-  { name: 'CPIN', amount: 50 },
 ];
 
 const selectCurrency = (currencyName) => {
