@@ -9,6 +9,7 @@ import pMemoize from '@/utils/promiseMemoize';
 import ExpiryMap from 'expiry-map';
 import {
   cpinConverterAddress,
+  peaqTokenAddress,
   cdataTokenAddress,
   cwattTokenAddress,
 } from './contract-addresses';
@@ -46,14 +47,14 @@ function _fetchExchaingeRates(cpinConverterAddr: `0x${string}`) {
     readContract(config, {
       address: cpinConverterAddr,
       abi: cpinConverterAbi,
-      functionName: 'cdataExchangeRate',
-      args: [],
+      functionName: 'cdataExchangeRates',
+      args: [peaqTokenAddress.value],
     }),
     readContract(config, {
       address: cpinConverterAddr,
       abi: cpinConverterAbi,
-      functionName: 'cwattExchangeRate',
-      args: [],
+      functionName: 'cwattExchangeRates',
+      args: [peaqTokenAddress.value],
     })
   ]) as Promise<[bigint, bigint]>;
 }
@@ -98,7 +99,7 @@ watchEffect(async (onCleanup) => {
 });
 // -----------------------------
 
-//////// Approwe Check /////////
+//////// Approve Check /////////
 function _fetchAllowance(tokenAddr: `0x${string}`, owner: `0x${string}`, spender: `0x${string}`) {
   return readContract(config, {
     address: tokenAddr,
@@ -194,7 +195,7 @@ export async function convert() {
         address: cpinConverterAddress.value,
         abi: cpinConverterAbi,
         functionName: selectedInputCurrency.value == 'CDATA' ? 'convertCDATA' : 'convertCWATT',
-        args: [input],
+        args: [peaqTokenAddress.value, input],
       }),
       loadingContext,
     );

@@ -12,7 +12,9 @@
     "location": "",
     "moduleCount": 880,
     "maxCapacity": 19360,
-    "images": ["/images/spp-1.jpg", "/images/spp-2.jpg", "/images/spp-3.jpg", "/images/spp-4.jpg"]
+    "images": [
+        "https://blue-impressed-butterfly-832.mypinata.cloud/ipfs/bafkreihbobt56iw7p3csf5i3uwe6dhyykz2bw4omkhqay3vyg7qq7fbu24"
+    ]
   },
   {
     "id": "2",
@@ -23,55 +25,80 @@
     "status": "active",
     "sppCode": "BBL – SPP – 001",
     "installedPower": "1,5 kWp",
-    "monthlyProduction": "2.000 KWh",
+    "monthlyProduction": "200 KWh",
     "location": "",
     "moduleCount": 4,
     "maxCapacity": 90,
-    "images": ["/images/spp-5.jpg"]
+    "images": [
+        "https://blue-impressed-butterfly-832.mypinata.cloud/ipfs/bafkreict6tmynqv26siff6x42n6vpnvv5e36cvaaj43jpaojgjnijmclxm"
+    ]
   },
   {
     "id": "3",
     "name": "Canada SPP-001",
-    "desc": "Located in North of Vancouver in British Colombia. This power plant has 120 photovoltaic module and produces 6.000 KWH per month. The installed power is 70 kwp and the power plant is currently 3 years old. ",
+    "desc": "Located in North of Vancouver in British Colombia. This facility has 12 photovoltaic modules and produces 800 KWH per month. The installed power is 6 kwp and the facility is currently 2 years old.",
     "country": "Canada",
     "city": "Vancouver",
     "status": "active",
     "sppCode": "VNC – SPP – 001",
-    "installedPower": "70 kWp",
-    "monthlyProduction": "6.000 KWh",
+    "installedPower": "6 kWp",
+    "monthlyProduction": "800 KWh",
     "location": "",
-    "moduleCount": 120,
-    "maxCapacity": 2640,
-    "images": []
+    "moduleCount": 12,
+    "maxCapacity": 264,
+    "images": [
+        "https://blue-impressed-butterfly-832.mypinata.cloud/ipfs/bafybeibsjh2crocsiumq3obqrbc436tuviplgeokrn6m7ivu5fgg6a6ys4"
+    ]
   },
   {
     "id": "4",
-    "name": "Kenya SPP-001",
-    "desc": "This plant is coming soon. ",
-    "country": "Kenya",
-    "city": "Mombasa",
-    "status": "passive",
-    "sppCode": "MMK – SPP – 001",
-    "installedPower": "* kWp",
-    "monthlyProduction": "* KWh",
+    "name": "Serbia SPP-002",
+    "desc": "Located in Novi Sad, Serbia. This power plant has 20 photovoltaic modules and produces 1.500 KWH per month. The installed power is 11 kwp and the facility is currently 1 year old.",
+    "country": "Serbia",
+    "city": "Novi Sad",
+    "status": "active",
+    "sppCode": "SNS – SPP – 002",
+    "installedPower": "11 kWp",
+    "monthlyProduction": "1.500 KWh",
     "location": "",
-    "moduleCount": 0,
-    "maxCapacity": 0,
-    "images": []
+    "moduleCount": 20,
+    "maxCapacity": 412,
+    "images": [
+        "https://blue-impressed-butterfly-832.mypinata.cloud/ipfs/bafybeib44mqmoihx4bzt5gf6z7xo3jkhmpjt6veretbm5yokqiuonmel5m"
+    ]
   },
   {
     "id": "5",
-    "name": "China SPP-001",
-    "desc": "This plant is coming soon. ",
-    "country": "China",
-    "city": "Golmud",
+    "name": "Macedonia SPP-001",
+    "desc": "Located in Skopje, Macedonia. This facility has 18 photovoltaic modules and produces 1.300 KWH per month. The installed power is 10 kwp and the facility is currently 2 year old. ",
+    "country": "Macedonia",
+    "city": "Skopje",
     "status": "active",
-    "sppCode": "GMC – SPP – 001",
-    "installedPower": "* kWp",
-    "monthlyProduction": "* KWh",
+    "sppCode": "SMK – SPP – 001",
+    "installedPower": "10 kWp",
+    "monthlyProduction": "1300 KWh",
     "location": "",
-    "moduleCount": 0,
-    "maxCapacity": 0,
-    "images": []
+    "moduleCount": 18,
+    "maxCapacity": 370,
+    "images": [
+        "https://blue-impressed-butterfly-832.mypinata.cloud/ipfs/bafybeibg4xnh2ssqlqp2twpphpyejtpolfeajqm2rw7x7f4f4w3i3o7jre"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Greece SPP-001",
+    "desc": "Located in Kavala, Greece. This facility has 10 photovoltaic modules and produces 9000 KWH per month. The installed power is 1,5 kwp and the facility is currently 4 year old. ",
+    "country": "Greece",
+    "city": "Kavala",
+    "status": "active",
+    "sppCode": "KGR - SPP - 001",
+    "installedPower": "80 kWp",
+    "monthlyProduction": "9000 KWh",
+    "location": "",
+    "moduleCount": 10,
+    "maxCapacity": 220,
+    "images": [
+        "https://blue-impressed-butterfly-832.mypinata.cloud/ipfs/bafybeice3hz2ucpmudmfd2c77luhrh2eph3hy5lhnpa6u5onxh5lwzrzam"
+    ]
   }
 ]

@@ -113,7 +113,7 @@ const props = defineProps({
   },
   newTokenName: {
     type: String,
-    default: 'CPIN',
+    default: 'PEAQ',
   },
   oldTokenIcon: {
     type: String,

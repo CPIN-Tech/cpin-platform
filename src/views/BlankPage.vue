@@ -31,7 +31,7 @@
 
           <!-- three cards -->
           <div class="flex gap-2">
-            <CardCombo2 title="Green Energy" centered class="basis-1/2" val="279050">
+            <CardCombo2 title="Green Energy" centered class="basis-1/2" :val="279050">
               <template #icon>
                 <CardComboIcon
                   :iconName="EnergyIcon"
@@ -41,7 +41,7 @@
                 ></CardComboIcon>
               </template>
             </CardCombo2>
-            <CardCombo2 title="Impact CO2" centered class="basis-1/2" val="2508">
+            <CardCombo2 title="Impact CO2" centered class="basis-1/2" :val="2508">
               <template #icon>
                 <CardComboIcon
                   :iconName="EnergyRenewableIcon"
@@ -51,7 +51,7 @@
                 ></CardComboIcon>
               </template>
             </CardCombo2>
-            <CardCombo2 title="Climate Heroes" centered class="basis-1/2" val="5">
+            <CardCombo2 title="Climate Heroes" centered class="basis-1/2" :val="5">
               <template #icon>
                 <CardComboIcon
                   :iconName="SessionsIcon"

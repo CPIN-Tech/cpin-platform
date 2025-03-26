@@ -20,9 +20,9 @@
         <TransactionsConvert
           title="Convert to CPIN"
           oldTokenName="CDATA"
-          newTokenName="CPIN"
+          newTokenName="PEAQ"
           oldTokenIcon="/images/open-book.png"
-          newTokenIcon="/images/cpin-logo.png"
+          newTokenIcon="https://s2.coinmarketcap.com/static/img/coins/64x64/14588.png"
           class="h-full"
         />
       </div>

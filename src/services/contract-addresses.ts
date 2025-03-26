@@ -20,7 +20,7 @@ const contractAddresses: {[index: number]: {
         cpinVirtualPanel: '0xa85c10190943BBc46dDE84024f9070e54987fa52',
         cpinBuyPanel: '0x0A493a73860DBC93f6CDE70D83799c296b9ad79D',
         cpinSppStaking: '0x5D19b364df25EBF6954296028B851BE38CB1f1a7',
-        cpinConverter: '0x22f1F42A0e7f47E3544e573C6B885658abEaF52d',
+        cpinConverter: '0x83eaE3Bc9a3F9Ba0D76C55212ab037206d03d496',
         peaqToken: '0x0000000000000000000000000000000000000809',
         usdtToken:'0xd8cF92E9B6Fae6B32f795AcB11Edd50E8dD6Ff4d',
         usdcToken: '0xbbA60da06c2c5424f03f7434542280FCAd453d10'
