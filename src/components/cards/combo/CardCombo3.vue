@@ -16,11 +16,11 @@
             <CardCombo4
               v-if="twoSeries"
               title="Reward"
-              valString="$37.5K CPIN"
+              valString="15.5 CDATA, 0 CWATT"
               percentage
               :percentageProps="{
-                value: 1.96,
-                direction: 'down',
+                value: 1,
+                direction: 'up',
               }"
             />
           </div>

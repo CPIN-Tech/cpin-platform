@@ -57,17 +57,17 @@ export function getMonthsSeries({ name = 'Trend' }) {
     return {
       series: {
         name: 'Production',
-        data: [10, 30, 45, 55, 95, 90, 170, 160],
+        data: [90, 170, 160],
       },
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+      categories: ['Jan', 'Feb', 'Mar'],
     };
   } else if (name == 'Reward') {
     return {
       series: {
         name: 'Reward',
-        data: [0, 0, 0, 0, 0, 0, 15, 43],
+        data: [0, 0, 1],
       },
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+      categories: ['Jan', 'Feb', 'Mar'],
     };
   }
   return {

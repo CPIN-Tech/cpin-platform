@@ -32,7 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import { faker } from '@faker-js/faker';
 import { NCard } from 'naive-ui';
 import { ref, watch, toRefs, computed } from 'vue';
 import { onClickOutside, useElementHover } from '@vueuse/core';
@@ -87,7 +86,7 @@ let lastDate = dayjs().valueOf();
 const counter = dataCount?.value ? dataCount?.value : type.value === 'bar' ? 25 : 30;
 for (let i = 0; i < counter; i++) {
   lastDate = dayjs(lastDate).subtract(1, 'day').valueOf();
-  data.value.push([lastDate, faker.number.int({ min: 500, max: 800 })]);
+  data.value.push([lastDate, i < 5 ? (5 - i) : 0]);
 }
 
 const totalValues = computed(() => data.value.map((i) => i[1]).reduce((a, c) => a + c, 0));
