@@ -58,9 +58,9 @@ watchEffect(async (onCleanup) => {
 
   if (currencyAddress.value && cpinBuyPanelAddress.value) {
     let result = await fetchPrice(currencyAddress.value, cpinBuyPanelAddress.value);
-    if (currencyAddress.value == peaqTokenAddress.value) {
-      result = result * 100n;
-    }
+    // if (currencyAddress.value == peaqTokenAddress.value) {
+    //   result = result * 100n;
+    // }
     if (currencyAddress.value == usdtTokenAddress.value || currencyAddress.value == usdcTokenAddress.value) {
       result = result * 10n**12n;
     }
